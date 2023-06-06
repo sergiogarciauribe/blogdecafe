@@ -159,15 +159,19 @@ img{
     border:none;
     margin-bottom: 0;
 }
-.widget-curso__label{
+.widget-curso__label,
+.curso__label{
     font-family: var(--fuenteHeading);
     font-weight: 700;
 }
-.widget-curso__info{
+.widget-curso__info,
+.curso__info{
     font-weight: 400;
 }
 .widget-curso__label,
-.widget-curso__info{
+.widget-curso__info,
+.curso__label,
+.curso__info{
     font-size: 2rem;
 }
 /*Footer*/
@@ -175,4 +179,38 @@ img{
     background-color: var(--negro);
     padding-bottom: 5rem ;
     margin-top: 5rem;
+}
+/*Sobre Nosotros*/
+@media (min-width: 768px){
+   /*.sobre-nosotros{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   }
+   .sobre-nosotros__imagen,
+   .sobre-nosotros__texto{
+        flex: 0 0 calc(50% - 1rem);
+   }*/
+   .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+   }
+}
+/*Cursos*/
+.curso{
+    padding: 3rem 0;
+    border-bottom: 0.1rem solid var(--gris);
+}
+.curso:last-of-type{
+    border: none;
+}
+@media (min-width: 768px){
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
 }
