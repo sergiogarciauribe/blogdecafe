@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Cafe</title>
+    <!--Prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -38,41 +45,50 @@
     </header>
     <div class="contenedor contenido-principal">
         <main class="blog">
-            <h3>Nuestro BLog</h3>
+            <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de grano de café</h4>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ullam ab rem eos culpa repellendus, adipisci impedit perspiciatis? Amet alias similique sunt fugiat, recusandae officia placeat asperiores perspiciatis odio et?
                     </p>
-                    <a href="entrada.htnl" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article> <!--Entrada 1-->
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 deliciosas Recetas de Café</h4>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ullam ab rem eos culpa repellendus, adipisci impedit perspiciatis? Amet alias similique sunt fugiat, recusandae officia placeat asperiores perspiciatis odio et?
                     </p>
-                    <a href="entrada.htnl" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article><!--Entrada 2-->
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios del café</h4>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam ullam ab rem eos culpa repellendus, adipisci impedit perspiciatis? Amet alias similique sunt fugiat, recusandae officia placeat asperiores perspiciatis odio et?
                     </p>
-                    <a href="entrada.htnl" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article><!--Entrada 3-->
         </main>
@@ -91,7 +107,7 @@
                         20
                         </span>
                     </p>
-                    <a href="entrada.htnl" class="boton boton--secundario">Más Información</a>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
                 </li><!--Curso 1-->
                 <li class="widget-curso">
                     <h4 class="no-margin">4 Recetas de Café Para Principiantes</h4>
@@ -105,7 +121,7 @@
                         20
                         </span>
                     </p>
-                    <a href="entrada.htnl" class="boton boton--secundario">Más Información</a>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información</a>
                 </li><!--Curso 2-->
             </ul>
         </aside>
